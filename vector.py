@@ -168,6 +168,10 @@ class VectorCalculator(tk.Tk):
                 ax.quiver(*start, *vec[:2], color = col, label = f'Vector {i+1} {vec}', scale = 1.0, scale_units = 'xy', angles = 'xy')
                 start = end
 
+        if result_vector is not None:
+            end = origin[:2] + result_vector[:2]
+            ax.quiver(*origin[:2], *result_vector[:2], color = color, label = f'{operation} {result_vector}', scale = 1.0, scale_units = 'xy', angles = 'xy')
+        
         ax.set_xlim([-unit-2, unit+2])
         ax.set_ylim([-unit-2, unit+2])
 
