@@ -1,6 +1,6 @@
 """
 code for caculating vectors and looking at the graph
-if you have any help, please email us.
+if you need any help, please email us.
 
 ~~~~~~~~~~~~~~~~~~~~~~~
 
